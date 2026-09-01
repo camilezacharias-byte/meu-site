@@ -22,9 +22,6 @@ img {
 width: 500px;
 height: 250px;
 }
-        .subtitulo{
-font-weight: bold;
-}
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,13 +30,24 @@ font-weight: bold;
 <body>
     <header>
     <h1>Daily Glow</h1>
-<p class='subtitulo'>Mantenha sua vida organizada com planejamento e constância.</p><img src="image.png"Mesa organizada com planner em tons de rosa delicado para planejamento e rotina produtiva.">
+<p>Mantenha sua vida organizada com planejamento e constância.</p><img src="image.png"Mesa organizada com planner em tons de rosa delicado para planejamento e rotina produtiva.">
     </header>
+    
+
 
 <main>
 <h2>Meu primeiro post</h2>
 <p>Por: Camile Vitória Zacharias.</p>
 <p>Estou aqui para ajudar você a transformar sua rotina de forma simples e eficiente. Com planejamento, organização e acompanhamento, você poderá criar hábitos consistentes, alcançar seus objetivos e ter mais controle sobre seu tempo. Dê o primeiro passo para uma vida mais organizada e produtiva.</p>
 </main>
+    <button>❤️<span>0</span></button>
 </body>
+    <script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </html>
